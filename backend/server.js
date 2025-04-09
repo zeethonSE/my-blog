@@ -7,7 +7,9 @@ app.use(express.json());
 
 const allowedOrigins = [
   "http://localhost:5173", // Vite dev server
-  "https://frontend-anksl0zu4-zeethons-projects.vercel.app"
+  "https://frontend-anksl0zu4-zeethons-projects.vercel.app",
+  "https://frontend-8nrtk76s0-zeethons-projects.vercel.app"  // Add this origin
+
 ];
 
 app.use(cors({
