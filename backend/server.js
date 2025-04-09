@@ -3,10 +3,30 @@ import cors from "cors";
 import postRoutes from "./routes/posts.js";
 
 const app = express();
-app.use(cors({ origin: "https://frontend-anksl0zu4-zeethons-projects.vercel.app" }));
 app.use(express.json());
 
+const allowedOrigins = [
+  "http://localhost:5173", // Vite dev server
+  "https://frontend-anksl0zu4-zeethons-projects.vercel.app"
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  }
+}));
+
 const PORT = process.env.PORT || 10000;
+
+//frontend hitting the server
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+});
 
 // ✅ Use the imported `postRoutes`
 app.use("/posts", postRoutes);

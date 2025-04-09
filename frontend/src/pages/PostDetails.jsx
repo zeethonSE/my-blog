@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
-const PATH = "https://my-blog-backend-zy6h.onrender.com";
-
+const PATH = import.meta.env.VITE_API_URL || "http://localhost:3000";
 function PostDetails() {
   const { id } = useParams();
   const [post, setPost] = useState(null);
