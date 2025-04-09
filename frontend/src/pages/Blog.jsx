@@ -8,7 +8,7 @@ function Blog() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get(PATH)
+    axios.get(`${PATH}/posts`)
       .then(response => setPosts(response.data))
       .catch(error => console.error("Error fetching posts:", error));
   }, []);
