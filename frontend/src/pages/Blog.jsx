@@ -4,7 +4,6 @@ import axios from "axios";
 
 const PATH = import.meta.env.VITE_API_URL;
 console.log("API URL →", PATH);
-
 function Blog() {
   const [posts, setPosts] = useState([]);
 
