@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-const PATH = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const PATH = import.meta.env.VITE_API_URL;
+console.log("API URL →", PATH);
 
 function Blog() {
   const [posts, setPosts] = useState([]);
