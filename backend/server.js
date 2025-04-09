@@ -5,22 +5,20 @@ import postRoutes from "./routes/posts.js";
 const app = express();
 app.use(express.json());
 
-const allowedOrigins = [
-  "http://localhost:5173", // Vite dev server
-  "https://frontend-anksl0zu4-zeethons-projects.vercel.app",
-  "https://frontend-8nrtk76s0-zeethons-projects.vercel.app"  // Add this origin
-
-];
-
-app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (!origin || origin.includes("vercel.app")) {
+      // Allow any Vercel-originated frontend
       callback(null, true);
     } else {
+      // Deny requests from non-Vercel origins (for security)
       callback(new Error("Not allowed by CORS"));
     }
-  }
-}));
+  },
+};
+
+app.use(cors(corsOptions));
+
 
 const PORT = process.env.PORT || 10000;
 
