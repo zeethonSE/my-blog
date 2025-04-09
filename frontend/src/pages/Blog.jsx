@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+const PATH = "https://my-blog-backend-zy6h.onrender.com";
+
 function Blog() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/posts")
+    axios.get(PATH)
       .then(response => setPosts(response.data))
       .catch(error => console.error("Error fetching posts:", error));
   }, []);

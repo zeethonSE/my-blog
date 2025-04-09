@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
+const PATH = "https://my-blog-backend-zy6h.onrender.com";
+
 function PostDetails() {
   const { id } = useParams();
   const [post, setPost] = useState(null);
@@ -10,7 +12,7 @@ function PostDetails() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/posts/${id}`)
+      .get(`${PATH}/${id}`)
       .then((response) => setPost(response.data))
       .catch(() => setError("Post not found"));
   }, [id]);
@@ -19,7 +21,7 @@ function PostDetails() {
     if (!window.confirm("Are you sure you want to delete this post?")) return;
 
     try {
-      await axios.delete(`http://localhost:3000/posts/${id}`);
+      await axios.delete(`${PATH}/${id}`);
       navigate("/blog"); // Redirect to blog page after deletion
     } catch (err) {
       setError("Error deleting post");

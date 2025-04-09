@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
+const PATH = "https://my-blog-backend-zy6h.onrender.com";
+
 function EditPost(){
 
     const {id} = useParams();
@@ -13,7 +15,7 @@ function EditPost(){
     useEffect(() => {
         
         axios
-        .get(`http://localhost:3000/posts/${id}`)
+        .get(`${PATH}/${id}`)
         .then((res) => {
             setTitle(res.data.title);
             setContent(res.data.content);
@@ -25,7 +27,7 @@ function EditPost(){
         e.preventDefault();
         
         await axios
-            .put(`http://localhost:3000/posts/${id}`, {title, content})
+            .put(`${PATH}/${id}`, {title, content})
             .then(() => navigate(`/post/${id}`))
             .catch(() => setError("Error updating post."));
     }

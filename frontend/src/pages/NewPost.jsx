@@ -2,6 +2,8 @@ import { useState } from "react";
 import {useNavigate} from "react-router-dom";
 import axios from "axios";
 
+const PATH = "https://my-blog-backend-zy6h.onrender.com";
+
 function NewPost(){
 
     const [title, setTitle] = useState("");
@@ -18,7 +20,7 @@ function NewPost(){
         }
 
         try {
-            await axios.post("http://localhost:3000/posts", {title, content});
+            await axios.post(PATH, {title, content});
             navigate("/blog");
         } catch (error) {
             setError("Error creating post.")
