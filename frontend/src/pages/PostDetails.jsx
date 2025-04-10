@@ -21,7 +21,7 @@ function PostDetails() {
     if (!window.confirm("Are you sure you want to delete this post?")) return;
 
     try {
-      await axios.delete(`${PATH}/${id}`);
+      await axios.delete(`${PATH}/posts/${id}`);
       navigate("/blog"); // Redirect to blog page after deletion
     } catch (err) {
       setError("Error deleting post");

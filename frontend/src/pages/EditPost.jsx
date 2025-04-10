@@ -27,7 +27,7 @@ function EditPost(){
         e.preventDefault();
         
         await axios
-            .put(`${PATH}/${id}`, {title, content})
+            .put(`${PATH}/posts/${id}`, {title, content})
             .then(() => navigate(`/post/${id}`))
             .catch(() => setError("Error updating post."));
     }
