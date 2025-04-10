@@ -12,7 +12,7 @@ function PostDetails() {
 
   useEffect(() => {
     axios
-      .get(`${PATH}/${id}`)
+      .get(`${PATH}/posts/${id}`)
       .then((response) => setPost(response.data))
       .catch(() => setError("Post not found"));
   }, [id]);

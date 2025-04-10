@@ -15,7 +15,7 @@ function EditPost(){
     useEffect(() => {
         
         axios
-        .get(`${PATH}/${id}`)
+        .get(`${PATH}/posts/${id}`)
         .then((res) => {
             setTitle(res.data.title);
             setContent(res.data.content);
