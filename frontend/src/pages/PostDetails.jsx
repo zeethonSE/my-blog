@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
-const PATH = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const PATH = import.meta.env.VITE_API_URL;
+
 function PostDetails() {
   const { id } = useParams();
   const [post, setPost] = useState(null);

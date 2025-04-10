@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom";
 import axios from "axios";
 
 const PATH = import.meta.env.VITE_API_URL;
+
 function NewPost(){
 
     const [title, setTitle] = useState("");
@@ -19,7 +20,7 @@ function NewPost(){
         }
 
         try {
-            await axios.post(PATH, {title, content});
+            await axios.post(`${PATH}/posts`, {title, content});
             navigate("/blog");
         } catch (error) {
             setError("Error creating post.")
