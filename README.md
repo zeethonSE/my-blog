@@ -17,5 +17,14 @@ npm run build
 npm run dev
 vercel --prod
 
-Go to: "https://frontend-iota-sable.vercel.app" 
+🙋‍♂️ Author
+Sai Sai
+💼 Web Developer
+📧 zeethon0@gmail.com
+🔗 [LinkedIn](https://linkedin.com/in/ssaiwd25)
+
+📄 License
+This project is open source and available under the [MIT License.](MIT-LICENSE)
+
+➡[️ Go to view on live]("https://frontend-iota-sable.vercel.app" )
 

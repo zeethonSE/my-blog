@@ -15,7 +15,6 @@ This is the backend for the My Blog project. It is built using **Node.js** and *
 
 ## Installation
 1. Clone the repository:
-   ```sh
    git clone https://github.com/zeethonSE/my-blog-backend.git
    cd blog-backend
 

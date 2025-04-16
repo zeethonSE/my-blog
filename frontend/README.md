@@ -1,5 +1,3 @@
-### ✅ **Frontend (`README.md`)**
-
 # Blog App - Frontend
 
 This is the frontend for the Blog application, built with **React.js** and styled with **Tailwind CSS**. It communicates with a backend API to manage blog posts.
@@ -39,8 +37,8 @@ This is the frontend for the Blog application, built with **React.js** and style
 
 1. Clone the repository:
 
-git clone https://github.com/zeethonSE/blog-frontend.git
-cd blog-frontend
+    git clone https://github.com/zeethonSE/blog-frontend.git
+    cd blog-frontend
 
 2. Install dependencies:
     npm install
