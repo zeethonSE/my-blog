@@ -21,15 +21,15 @@ This is the frontend for the Blog application, built with **React.js** and style
 
 ## 🖥 Project Structure
 
-. ├── src/  
-    ├── pages/ 
-        ├── Blog.jsx 
-        ├── EditPost.jsx
-        ├── Home.jsx  
-        ├── NewPost.jsx 
-        └── PostDetail.jsx
-    ├── App.jsx 
-    ├── main.jsx 
+├── src/  
+|   ├── pages/ 
+|       ├── Blog.jsx 
+|       ├── EditPost.jsx
+|       ├── Home.jsx  
+|       ├── NewPost.jsx 
+|       └── PostDetail.jsx
+|   ├── App.jsx 
+|   ├── main.jsx 
 ├── .env 
 └── vite.config.js
 

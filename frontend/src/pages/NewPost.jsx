@@ -28,29 +28,32 @@ function NewPost(){
     }
 
     return (
-        <div>
-            <h2 className="text-2xl font-bold">Create a New Post</h2>
-            {error && <p className="text-red-500">{error}</p>}
-            <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+        <div className="h-screen rounded-md bg-cover bg-center bg-[url('./Paris.png')]">
+           
+            <div className="p-4 h-screen content-center justify-items-center">
+                {error && <p className="text-red-500">{error}</p>}
+                <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-full md:w-2/3">
+                <h3 className="text-sm text-gray-500 md:text-xxl">CREATE NEW POST</h3>
                 <input 
-                className="border p-2 rounded" 
+                className="p-2 rounded bg-orange-200" 
                 type="text"
                 placeholder="Title"
                 value={title}
                 onChange={e => setTitle(e.target.value)} />
 
                 <textarea 
-                className="border p-2 rounded" 
+                className="p-2 rounded bg-orange-100" 
                 type="text" 
                 value={content} 
                 placeholder="New Post" 
-                rows={3}
+                rows={8}
                 onChange={e => setContent(e.target.value)} />
 
                 <button 
-                className="bg-blue-500 text-white p-2 rounded" 
-                type="submit">Create Post</button>
-            </form>
+                className="bg-orange-200 text-blue-500 hover:text-green-500 p-2 rounded" 
+                type="submit">Post</button>
+                </form>
+            </div>
         </div>
     )
 }
