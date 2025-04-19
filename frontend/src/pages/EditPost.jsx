@@ -35,9 +35,9 @@ function EditPost(){
     if (error) return <h2 className="text-red-500">{error}</h2>;
 
     return(
-        <div>
-            <h2 className="text-2xl font-bold">Edit Post</h2>
-            <form onSubmit={handUpdate} className="flex flex-col gap-3">
+        <div className="p-4 h-screen content-center justify-items-center">
+            <h2 className="text-sm text-bold text-gray-500 md:text-2xl">Edit Post</h2>
+            <form onSubmit={handUpdate} className="flex flex-col gap-3 w-full md:w-2/3">
             <input
             type="text"
             value={title}
@@ -47,9 +47,10 @@ function EditPost(){
             type="text"
             value={content}
             onChange={e => setContent(e.target.value)}
+            rows={8}
             className="border p-2 rounded" />
-            <button type="submit" className="bg-green-500 text-white p-2 rounded">
-                Update Post
+            <button type="submit" className="text-center text-blue-500 hover:text-green-500 p-2 rounded">
+                Update
             </button>
             </form>
         </div>

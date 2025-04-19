@@ -32,9 +32,9 @@ function PostDetails() {
   if (!post) return <h2>Loading...</h2>;
 
   return (
-    <div className="p-4 gap-4 h-screen content-center justify-items-center bg-gradient-to-r from-gray-500 via-gray-300 to-black bg-[length:200%_200%] animate-bg-pan">
+    <div className="p-4 mt-4 gap-4 h-screen rounded-md justify-items-center bg-gray-300">
       <h2 className="p-4 text-2xl rounded-md font-bold border border-gray-500 w-full md:w-2/3">{post.title}</h2>
-      <p className="p-4 h-100 scroll-auto rounded-md border border-gray-500 w-full md:w-2/3">{post.content}</p>
+      <p className="p-4 mt-4 h-100 scroll-auto rounded-md border border-gray-500 w-full md:w-2/3">{post.content}</p>
       <div className="flex gap-4 mt-4">
         <Link to={`/edit/${id}`} className="text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 rounded w-30 border border-gray-500">
           Edit
