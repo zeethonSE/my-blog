@@ -35,21 +35,21 @@ function EditPost(){
     if (error) return <h2 className="text-red-500">{error}</h2>;
 
     return(
-        <div className="p-4 h-screen content-center justify-items-center">
-            <h2 className="text-sm text-bold text-gray-500 md:text-2xl">Edit Post</h2>
+        <div className="p-4 mt-4 h-screen justify-items-center bg-gray-300 rounded-md">
+            <h2 className="text-xl font-semibold font-bold text-gray-500 md:text-2xl">EDIT POST</h2>
             <form onSubmit={handUpdate} className="flex flex-col gap-3 w-full md:w-2/3">
             <input
             type="text"
             value={title}
             onChange={e => setTitle(e.target.value)}
-            className="border p-2 rounded" />
+            className="border p-2 rounded font-bold font-semibold" />
             <textarea
             type="text"
             value={content}
             onChange={e => setContent(e.target.value)}
             rows={8}
-            className="border p-2 rounded" />
-            <button type="submit" className="text-center text-blue-500 hover:text-green-500 p-2 rounded">
+            className="border p-2 rounded font-semibold" />
+            <button type="submit" className="text-center font-semibold border border-gray-500 text-blue-500 hover:text-green-500 p-2 rounded">
                 Update
             </button>
             </form>
