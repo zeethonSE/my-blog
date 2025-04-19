@@ -32,14 +32,14 @@ function PostDetails() {
   if (!post) return <h2>Loading...</h2>;
 
   return (
-    <div className="p-4 h-screen content-center justify-items-center w-full md:w-2/3">
-      <h2 className="text-2xl font-bold">{post.title}</h2>
-      <p>{post.content}</p>
-      <div className="flex gap-4 mt-4">
-        <Link to={`/edit/${id}`} className="text-blue-500 hover:text-green-500 p-2 rounded">
+    <div className="p-4 h-screen w-full md:w-2/3 rounded-md bg-cover bg-center bg-[url('./Travel-Blog.png')]">
+      <h2 className="text-2xl font-bold bg-orange-100">{post.title}</h2>
+      <p className="bg-orange-200">{post.content}</p>
+      <div className="flex gap-4 mt-4 justify-items-center">
+        <Link to={`/edit/${id}`} className="text-blue-500 hover:text-green-500 p-2 rounded bg-orange-100">
           Edit
         </Link>
-        <button onClick={handleDelete} className="text-blue-500 hover:text-green-500 p-2 rounded">
+        <button onClick={handleDelete} className="text-blue-500 hover:text-green-500 p-2 rounded bg-orange-100">
           Delete
         </button>
       </div>
