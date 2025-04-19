@@ -32,14 +32,14 @@ function PostDetails() {
   if (!post) return <h2>Loading...</h2>;
 
   return (
-    <div className="p-4 h-screen content-center bg-cover bg-center bg-[url('/clean-gray-paper.png')]">
+    <div className="p-4 h-screen content-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-[length:200%_200%] animate-bg-pan">
       <h2 className="p-4 text-2xl rounded-md font-bold border border-gray-500 w-full md:w-2/3">{post.title}</h2>
       <p className="p-4 h-100 scroll-auto rounded-md border border-gray-500 w-full md:w-2/3">{post.content}</p>
-      <div className="flex gap-4 mt-4 justify-items-center">
-        <Link to={`/edit/${id}`} className="text-blue-500 hover:text-green-500 p-2 rounded w-50">
+      <div className="flex gap-4 mt-4">
+        <Link to={`/edit/${id}`} className="text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 rounded w-30 border border-gray-500">
           Edit
         </Link>
-        <button onClick={handleDelete} className="text-blue-500 hover:text-green-500 p-2 rounded w-50">
+        <button onClick={handleDelete} className="text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 border border-gray-500">
           Delete
         </button>
       </div>
