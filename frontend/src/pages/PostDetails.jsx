@@ -32,7 +32,7 @@ function PostDetails() {
   if (!post) return <h2>Loading...</h2>;
 
   return (
-    <div className="p-4 h-screen content-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-[length:200%_200%] animate-bg-pan">
+    <div className="p-4 gap-4 h-screen content-center justify-items-center bg-gradient-to-r from-gray-500 via-gray-300 to-black bg-[length:200%_200%] animate-bg-pan">
       <h2 className="p-4 text-2xl rounded-md font-bold border border-gray-500 w-full md:w-2/3">{post.title}</h2>
       <p className="p-4 h-100 scroll-auto rounded-md border border-gray-500 w-full md:w-2/3">{post.content}</p>
       <div className="flex gap-4 mt-4">
