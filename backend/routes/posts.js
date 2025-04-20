@@ -1,10 +1,6 @@
 import express from "express";
 const router = express.Router();
-
-let posts = [
-  { id: "1", title: "First Blog Post", description: "Introduction to my blog.", content: "This is the full content of the post." },
-  { id: "2", title: "React vs Vue", description: "A comparison of two popular frameworks.", content: "Here's how React and Vue compare..." }
-];
+import posts from "../data";
 
 // Get all posts
 router.get("/", (req, res) => {

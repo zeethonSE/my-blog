@@ -26,5 +26,5 @@ Sai Sai
 📄 License
 This project is open source and available under the [MIT License.](MIT-LICENSE)
 
-➡[️ Go to view on live]("https://frontend-iota-sable.vercel.app" )
+➡[️ Go to view on live]("https://frontend-iota-sable.vercel.app")
 
