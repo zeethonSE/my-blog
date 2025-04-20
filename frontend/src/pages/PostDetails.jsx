@@ -35,12 +35,12 @@ function PostDetails() {
   return (
     <div className="p-4 mt-4 gap-4 h-screen rounded-md justify-items-center bg-gray-300">
       <h2 className="p-4 text-2xl rounded-md font-bold border border-gray-500 w-full md:w-2/3">{post.title}</h2>
-      <p className="p-4 mt-4 h-100 scroll-auto rounded-md border border-gray-500 w-full md:w-2/3">
+      <textarea className="p-4 mt-4 h-100 scroll-auto rounded-md border border-gray-500 w-full md:w-2/3">
         {post.date} | {post.author} | {post.category}
         <ReactMarkdown className="prose max-w-none">
           {post.content}
         </ReactMarkdown>
-      </p>
+      </textarea>
       {/* <div className="prose">{post.content}</div> */}
       {/* <div dangerouslySetInnerHTML={{ __html: post.content }} /> */}
       <div className="flex gap-4 mt-4">
