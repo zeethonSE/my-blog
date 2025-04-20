@@ -1,4 +1,4 @@
-export const posts = [
+const posts = [
   {
     id: "authentic-thailand",
     title: "Authentic Thailand",
@@ -198,3 +198,4 @@ export const posts = [
   },
   // more posts...
 ];
+export default posts;
