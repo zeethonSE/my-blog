@@ -8,7 +8,7 @@ export const posts = [
     author: "You",
     category: "Travel & Culture",
     content: (
-      <>
+      `
         <p>
           When people think of Thailand, the usual images come to mind: golden temples, 
           white-sand beaches, Pad Thai, and neon-lit full moon parties. 
@@ -195,7 +195,7 @@ export const posts = [
           That's authentic Thailand. And it's not found in a brochure — 
           it's found in the spaces in between.
         </p>
-      </>
+      `
     ),
   },
   // more posts...

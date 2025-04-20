@@ -37,7 +37,8 @@ function PostDetails() {
       <p className="p-4 mt-4 h-100 scroll-auto rounded-md border border-gray-500 w-full md:w-2/3">
       {post.date} | {post.author} | {post.category}
       </p>
-      <div className="prose">{post.content}</div>
+      {/* <div className="prose">{post.content}</div> */}
+      <div dangerouslySetInnerHTML={{ __html: post.content }} />
       <div className="flex gap-4 mt-4">
         <Link to={`/edit/${id}`} className="text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 rounded w-30 border border-gray-500">
           Edit
