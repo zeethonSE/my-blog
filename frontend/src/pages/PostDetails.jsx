@@ -36,11 +36,14 @@ function PostDetails() {
     <div className="p-4 mt-4 gap-4 h-screen rounded-md justify-items-center bg-gray-300">
       <h2 className="p-4 text-2xl rounded-md font-bold border border-gray-500 w-full md:w-2/3">{post.title}</h2>
       <div className="p-4 mt-4 h-100 scroll-auto rounded-md border border-gray-500 w-full md:w-2/3">
+      <div className="text-sm text-gray-500 mb-2">
         {post.date} | {post.author} | {post.category}
+      </div>
         <ReactMarkdown className="prose max-w-none">
           {post.content}
         </ReactMarkdown>
       </div>
+
 
       {/* <div className="prose">{post.content}</div> */}
       {/* <div dangerouslySetInnerHTML={{ __html: post.content }} /> */}
