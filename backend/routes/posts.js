@@ -1,6 +1,6 @@
 import express from "express";
+import posts from "./postsData.js";
 const router = express.Router();
-import posts from "./postsData";
 
 // Get all posts
 router.get("/", (req, res) => {
