@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
+import ReactMarkdown from 'react-markdown';
 
 const PATH = import.meta.env.VITE_API_URL;
 
@@ -35,10 +36,13 @@ function PostDetails() {
     <div className="p-4 mt-4 gap-4 h-screen rounded-md justify-items-center bg-gray-300">
       <h2 className="p-4 text-2xl rounded-md font-bold border border-gray-500 w-full md:w-2/3">{post.title}</h2>
       <p className="p-4 mt-4 h-100 scroll-auto rounded-md border border-gray-500 w-full md:w-2/3">
-      {post.date} | {post.author} | {post.category}
+        {post.date} | {post.author} | {post.category}
+        <ReactMarkdown className="prose max-w-none">
+          {post.content}
+        </ReactMarkdown>
       </p>
       {/* <div className="prose">{post.content}</div> */}
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      {/* <div dangerouslySetInnerHTML={{ __html: post.content }} /> */}
       <div className="flex gap-4 mt-4">
         <Link to={`/edit/${id}`} className="text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 rounded w-30 border border-gray-500">
           Edit
