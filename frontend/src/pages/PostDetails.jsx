@@ -41,27 +41,7 @@ function PostDetails() {
         {post.date} | {post.author} | {post.category}
       </div>
       <ReactMarkdown className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none">
-        {`# Hello World
-
-      This is **bold** and _italic_ text.
-
-      - Item 1
-      - Item 2
-      - Item 1
-      - Item 2
-      - Item 1
-      - Item 2
-      - Item 1
-      - Item 2
-      - Item 1
-      - Item 2
-      - Item 1
-      - Item 2
-      - Item 1
-      - Item 2
-      - Item 1
-      - Item 2
-      `}
+        {post.content}
       </ReactMarkdown>
 
         {/* <ReactMarkdown className="prose max-w-none">
