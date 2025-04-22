@@ -39,8 +39,8 @@ function PostDetails() {
       <div className="text-sm text-gray-500 mb-2">
         {post.date} | {post.author} | {post.category}
       </div>
-        <ReactMarkdown className="prose prose-neutral max-w-none">
-          {post.content}
+        <ReactMarkdown className="prose max-w-none">
+          {Array.isArray(post.content) ? post.content.join('\n') : post.content}
         </ReactMarkdown>
       </div>
 
