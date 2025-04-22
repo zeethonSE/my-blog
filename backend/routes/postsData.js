@@ -5,7 +5,7 @@ const posts = [
     date: "2025-04-16",
     author: "Zeethon",
     category: "Travel & Culture",
-    content: (
+    content:
       `
           When people think of Thailand, the usual images come to mind: golden temples, 
           white-sand beaches, Pad Thai, and neon-lit full moon parties. 
@@ -166,7 +166,6 @@ const posts = [
           it's found in the spaces in between.
         
       `
-    ),
   },
   // more posts...
 ];
