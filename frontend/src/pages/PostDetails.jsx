@@ -40,9 +40,19 @@ function PostDetails() {
       <div className="text-sm text-gray-500 mb-2">
         {post.date} | {post.author} | {post.category}
       </div>
-        <ReactMarkdown className="prose max-w-none">
+      <ReactMarkdown>
+        {`# Hello World
+
+      This is **bold** and _italic_ text.
+
+      - Item 1
+      - Item 2
+      `}
+      </ReactMarkdown>
+
+        {/* <ReactMarkdown className="prose max-w-none">
           {Array.isArray(post.content) ? post.content.join('\n') : post.content}
-        </ReactMarkdown>
+        </ReactMarkdown> */}
       </div>
 
 
