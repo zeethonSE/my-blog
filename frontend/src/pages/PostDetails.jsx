@@ -39,7 +39,7 @@ function PostDetails() {
       <div className="text-sm text-gray-500 mb-2">
         {post.date} | {post.author} | {post.category}
       </div>
-        <ReactMarkdown className="prose max-w-none">
+        <ReactMarkdown className="prose prose-neutral max-w-none">
           {post.content}
         </ReactMarkdown>
       </div>
