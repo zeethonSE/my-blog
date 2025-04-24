@@ -2,18 +2,17 @@ const posts = [
   {
     id: "authentic-thailand",
     title: "Authentic Thailand",
-    date: "2025-04-16",
-    author: "Zee",
-    category: "Travel & Culture",
-    content:`When people think of Thailand, the usual images come to mind: golden temples, 
+    content:`
+    When people think of Thailand, the usual images come to mind: golden temples, 
     white-sand beaches, Pad Thai, and neon-lit full moon parties. 
     But there's another side of this Southeast Asian gem — quieter, deeper, and more human. 
     This is authentic Thailand: the version you don't always see on Instagram, 
     but one you'll carry with you for life.   
     In this post, we're going past the postcard-perfect. We're digging into real experiences, local moments, 
     hidden villages, flavors that come without a menu, and the soul of a country that knows how to live with joy — 
-    even in simplicity.   
-    # 1. Bangkok's Hidden Heart    
+    even in simplicity.
+
+    1. Bangkok's Hidden Heart    
     Yes, Bangkok is chaotic. But slow down, and you'll find an undercurrent of 
     calm tradition running beneath the surface.    
     Skip Khao San Road for a day. Instead, wander into Talad Noi, 
