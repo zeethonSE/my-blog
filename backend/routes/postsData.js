@@ -3,7 +3,7 @@ const posts = [
     id: "authentic-thailand",
     title: "Authentic Thailand",
     date: "2025-04-16",
-    author: "Zeethon",
+    author: "Zee",
     category: "Travel & Culture",
     content:`
     When people think of Thailand, the usual images come to mind: golden temples, 
