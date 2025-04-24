@@ -42,7 +42,7 @@ function PostDetails() {
           {post.date} | {post.author} | {post.category}
         </div>
           <ReactMarkdown className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none"
-            children = {mark}
+            children = {post.content}
           />
       </div> 
       <div className="flex gap-4 mt-4">
