@@ -41,7 +41,9 @@ function PostDetails() {
         <div className="text-sm text-gray-500 mb-2">
           {post.date} | {post.author} | {post.category}
         </div>
-          <ReactMarkdown className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none"
+          <ReactMarkdown
+            key={post.content} 
+            className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none"
             children = {post.content}
           />
       </div> 
