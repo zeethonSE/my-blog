@@ -5,8 +5,7 @@ const posts = [
     date: "2025-04-16",
     author: "Zee",
     category: "Travel & Culture",
-    content:`
-    When people think of Thailand, the usual images come to mind: golden temples, 
+    content:`When people think of Thailand, the usual images come to mind: golden temples, 
     white-sand beaches, Pad Thai, and neon-lit full moon parties. 
     But there's another side of this Southeast Asian gem — quieter, deeper, and more human. 
     This is authentic Thailand: the version you don't always see on Instagram, 
