@@ -14,7 +14,7 @@ const posts = [
     In this post, we're going past the postcard-perfect. We're digging into real experiences, local moments, 
     hidden villages, flavors that come without a menu, and the soul of a country that knows how to live with joy — 
     even in simplicity.   
-    ## 1. Bangkok's Hidden Heart    
+    # 1. Bangkok's Hidden Heart    
     Yes, Bangkok is chaotic. But slow down, and you'll find an undercurrent of 
     calm tradition running beneath the surface.    
     Skip Khao San Road for a day. Instead, wander into Talad Noi, 

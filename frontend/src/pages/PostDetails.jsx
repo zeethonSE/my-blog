@@ -39,10 +39,10 @@ function PostDetails() {
       <div className="p-4 mt-4 h-100 scroll-auto rounded-md border border-gray-500 w-full md:w-2/3">
         <div className="text-sm text-gray-500 mb-2">
           {post.date} | {post.author} | {post.category}
-          <ReactMarkdown className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none">
-            {post.content}
-          </ReactMarkdown>
         </div>
+          <ReactMarkdown className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none"
+            children = {post.content}
+          />
       </div> 
       <div className="flex gap-4 mt-4">
         <Link to={`/edit/${id}`} className="text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 rounded w-30 border border-gray-500">
