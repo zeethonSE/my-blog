@@ -33,6 +33,7 @@ function PostDetails() {
   if (!post) return <h2>Loading...</h2>;
 
   console.log("Content:", post.content);
+  const mark = '# Hello, *world*!';
   return (
     <div className="p-4 mt-4 gap-4 h-screen rounded-md justify-items-center bg-gray-300">
       <h2 className="p-4 text-2xl rounded-md font-bold border border-gray-500 w-full md:w-2/3">{post.title}</h2>
@@ -41,7 +42,7 @@ function PostDetails() {
           {post.date} | {post.author} | {post.category}
         </div>
           <ReactMarkdown className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none"
-            children = {post.content}
+            children = {mark}
           />
       </div> 
       <div className="flex gap-4 mt-4">
