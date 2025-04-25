@@ -28,7 +28,7 @@ function NewPost(){
     }
 
     return (
-        <div className="mt-0 h-screen rounded-md bg-cover bg-center bg-[url('/Paris.png')]">
+        <div className="h-screen rounded-md bg-cover bg-center bg-[url('/Paris.png')]">
            
             <div className="p-4 h-screen content-center justify-items-center">
                 {error && <p className="text-red-500">{error}</p>}
@@ -42,14 +42,14 @@ function NewPost(){
                 onChange={e => setTitle(e.target.value)} />
 
                 <textarea 
-                className="p-2 rounded bg-green-300 font-semibold w-full resize-none h-24 sm:h-32 md:h-40 lg:h-48" 
+                className="p-2 rounded bg-green-300 font-semibold w-full resize-none h-48 md:h-64" 
                 type="text" 
                 value={content} 
                 placeholder="New Post" 
                 onChange={e => setContent(e.target.value)} />
 
                 <button 
-                className="bg-green-500 hover:text-blue-500 p-2 rounded" 
+                className="bg-green-500 hover:text-green-300 p-2 rounded" 
                 type="submit">Post</button>
                 </form>
             </div>
