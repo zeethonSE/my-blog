@@ -42,7 +42,7 @@ function NewPost(){
                 onChange={e => setTitle(e.target.value)} />
 
                 <textarea 
-                className="p-2 rounded bg-green-300 font-semibold w-full resize-none h-48 md:h-64" 
+                className="p-2 rounded bg-green-300 font-semibold w-full resize-none h-64 md:h-80" 
                 type="text" 
                 value={content} 
                 placeholder="New Post" 
