@@ -12,7 +12,7 @@ const posts = [
     hidden villages, flavors that come without a menu, and the soul of a country that knows how to live with joy — 
     even in simplicity.
 
-    1. Bangkok's Hidden Heart    
+    # 1. Bangkok's Hidden Heart    
     Yes, Bangkok is chaotic. But slow down, and you'll find an undercurrent of 
     calm tradition running beneath the surface.    
     Skip Khao San Road for a day. Instead, wander into Talad Noi, 
@@ -23,26 +23,27 @@ const posts = [
     where children still learn traditional Thai dance, and monks walk barefoot 
     along the canal at dawn. The slow rhythm here reveals a side of Bangkok 
     where people still make time to sit, smile, and share stories.
+
+    ## 2. The Village Way of Life
+        
+          To experience the real heartbeat of Thailand, you need to leave the cities. 
+          In northern provinces like Nan or Chiang Rai, you'll find villages 
+          where life hasn't changed all that much in generations.
+        
+          Spend a night (or three) with a host family. Wake up to the sound of roosters. 
+          Join in a local meal of sticky rice, chili paste (nam prik), 
+          and grilled vegetables — all made from the garden out back.
+        
+          People may not speak much English, but communication goes far beyond language. 
+          The slow smiles, the shared tea, the “come sit with us” gestures — 
+          it all says more than words ever could.
+   
     `
   },
   // more posts...
 ];
 export default posts;
-
-// ## 2. The Village Way of Life
-        
-//           To experience the real heartbeat of Thailand, you need to leave the cities. 
-//           In northern provinces like Nan or Chiang Rai, you'll find villages 
-//           where life hasn't changed all that much in generations.
-        
-//           Spend a night (or three) with a host family. Wake up to the sound of roosters. 
-//           Join in a local meal of sticky rice, chili paste (nam prik), 
-//           and grilled vegetables — all made from the garden out back.
-        
-//           People may not speak much English, but communication goes far beyond language. 
-//           The slow smiles, the shared tea, the “come sit with us” gestures — 
-//           it all says more than words ever could.
-        
+     
 
 //         ## 3. The Local Markets (Not the Tourist Traps)
         
