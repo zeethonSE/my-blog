@@ -38,7 +38,7 @@ function PostDetails() {
       <h2 className="p-4 text-2xl rounded-md font-bold border border-gray-500 w-full md:w-2/3">{post.title}</h2>
       <div className="p-4 mt-4 rounded-md border border-gray-500 w-full md:w-2/3">
         <textarea 
-          className="w-auto font-semibold"
+          className="w-full font-semibold"
           value={post.content}
           type="text"
           rows={15}
