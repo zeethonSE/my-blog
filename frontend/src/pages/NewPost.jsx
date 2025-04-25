@@ -33,24 +33,24 @@ function NewPost(){
             <div className="p-4 h-screen content-center justify-items-center">
                 {error && <p className="text-red-500">{error}</p>}
                 <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-full md:w-2/3">
-                <h3 className="text-sm fond-bold font-semibold text-gray-500 md:text-2xl">CREATE NEW POST</h3>
+                <h3 className="text-sm fond-bold font-semibold text-gray-300 md:text-2xl">CREATE NEW POST</h3>
                 <input 
-                className="p-2 rounded bg-orange-200 font-semibold" 
+                className="p-2 rounded bg-green-500 font-semibold" 
                 type="text"
                 placeholder="Title"
                 value={title}
                 onChange={e => setTitle(e.target.value)} />
 
                 <textarea 
-                className="p-2 rounded bg-orange-100 font-semibold" 
+                className="p-2 rounded bg-green-300 font-semibold" 
                 type="text" 
                 value={content} 
                 placeholder="New Post" 
-                rows={8}
+                rows={15}
                 onChange={e => setContent(e.target.value)} />
 
                 <button 
-                className="bg-orange-200 text-blue-500 hover:text-green-500 p-2 rounded" 
+                className="bg-green-500 hover:text-blue-500 p-2 rounded" 
                 type="submit">Post</button>
                 </form>
             </div>

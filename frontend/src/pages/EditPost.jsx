@@ -36,20 +36,22 @@ function EditPost(){
 
     return(
         <div className="p-4 h-screen content-center justify-items-center rounded-md bg-cover bg-center bg-[url('/paolo-sanchez.jpg')]">
-            <h2 className="text-xl font-bold text-gray-500 md:text-2xl">EDIT POST</h2>
+            <div>
+                <h2 className="text-sm text-left font-bold text-gray-300 md:text-2xl">EDIT POST</h2>
+            </div>
             <form onSubmit={handUpdate} className="flex flex-col gap-3 w-full md:w-2/3">
             <input
             type="text"
             value={title}
             onChange={e => setTitle(e.target.value)}
-            className="border p-2 rounded font-bold bg-green-300" />
+            className="border p-2 rounded font-bold bg-green-500" />
             <textarea
             type="text"
             value={content}
             onChange={e => setContent(e.target.value)}
             rows={15}
             className="border p-2 rounded font-semibold bg-green-300" />
-            <button type="submit" className="bg-green-300 text-center font-semibold border border-gray-500 text-blue-500 hover:text-green-500 p-2 rounded">
+            <button type="submit" className="bg-green-500 text-center font-semibold border border-gray-500 hover:text-blue-500 p-2 rounded">
                 Update
             </button>
             </form>

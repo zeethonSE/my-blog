@@ -33,7 +33,7 @@ function PostDetails() {
 
   return (
     <div className="p-4 gap-4 h-screen rounded-md content-center justify-items-center bg-cover bg-center bg-[url('/ekrulila.jpg')]">
-      <h2 className="p-4 text-2xl rounded-md font-bold bg-green-300 border border-gray-500 w-full md:w-2/3">{post.title}</h2>
+      <h2 className="p-4 text-xl rounded-md font-bold bg-green-500 border border-gray-500 w-full md:2xl md:w-2/3">{post.title}</h2>
       <div className="p-4 mt-4 rounded-md bg-green-300 border border-gray-500 w-full md:w-2/3">
         <textarea 
           className="w-full font-semibold"
@@ -44,10 +44,10 @@ function PostDetails() {
         />
       </div> 
       <div className="flex gap-4 mt-4">
-        <Link to={`/edit/${id}`} className="bg-green-300 text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 rounded w-30 border border-gray-500">
+        <Link to={`/edit/${id}`} className="bg-green-500 text-center hover:text-blue-500 p-2 rounded w-30 rounded w-30 border border-gray-500">
           Edit
         </Link>
-        <button onClick={handleDelete} className="bg-green-300 text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 border border-gray-500">
+        <button onClick={handleDelete} className="bg-green-500 text-center hover:text-blue-500 p-2 rounded w-30 border border-gray-500">
           Delete
         </button>
       </div>
