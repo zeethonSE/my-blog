@@ -36,10 +36,13 @@ function PostDetails() {
   return (
     <div className="p-4 mt-4 gap-4 h-screen rounded-md justify-items-center bg-gray-300">
       <h2 className="p-4 text-2xl rounded-md font-bold border border-gray-500 w-full md:w-2/3">{post.title}</h2>
-      <div className="p-4 mt-4 h-100 scroll-auto rounded-md border border-gray-500 w-full md:w-2/3">
-        <p className="text-sm text-gray-500 mb-2">
-          {post.content}
-        </p>
+      <div className="p-4 mt-4 rounded-md border border-gray-500 w-full md:w-2/3">
+        <textarea 
+          className="font-semibold"
+          value={post.content}
+          type="text"
+          rows={15}
+        />
       </div> 
       <div className="flex gap-4 mt-4">
         <Link to={`/edit/${id}`} className="text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 rounded w-30 border border-gray-500">
