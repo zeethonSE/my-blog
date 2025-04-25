@@ -1,6 +1,6 @@
 function Home() {
     return (
-      <div className="p-4 h-auto">
+      <div className="p-4 h-auto mt-0">
         <div className="p-4 h-auto rounded-md bg-linear-to-b from-black to-blue-500">
           <img className="bg-cover bg-center rounded-md" src="./Zeethon-post.png" alt="Zeethon Post"/>
         </div>

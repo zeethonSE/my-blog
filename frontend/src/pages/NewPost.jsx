@@ -28,25 +28,24 @@ function NewPost(){
     }
 
     return (
-        <div className="h-screen rounded-md bg-cover bg-center bg-[url('/Paris.png')]">
+        <div className="mt-0 h-screen rounded-md bg-cover bg-center bg-[url('/Paris.png')]">
            
             <div className="p-4 h-screen content-center justify-items-center">
                 {error && <p className="text-red-500">{error}</p>}
                 <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-full md:w-2/3">
                 <h3 className="text-sm fond-bold font-semibold text-gray-300 md:text-2xl">CREATE NEW POST</h3>
                 <input 
-                className="p-2 rounded bg-green-500 font-semibold" 
+                className="text-lg md:text-xl p-2 rounded bg-green-500 font-semibold" 
                 type="text"
                 placeholder="Title"
                 value={title}
                 onChange={e => setTitle(e.target.value)} />
 
                 <textarea 
-                className="p-2 rounded bg-green-300 font-semibold" 
+                className="p-2 rounded bg-green-300 font-semibold w-full resize-none h-24 sm:h-32 md:h-40 lg:h-48" 
                 type="text" 
                 value={content} 
                 placeholder="New Post" 
-                rows={15}
                 onChange={e => setContent(e.target.value)} />
 
                 <button 
