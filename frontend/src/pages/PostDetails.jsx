@@ -34,9 +34,9 @@ function PostDetails() {
   console.log("Content:", post.content);
   const mark = '# Hello, *world*!';
   return (
-    <div className="p-4 mt-4 gap-4 h-screen rounded-md justify-items-center bg-gray-300 bg-cover bg-center bg-[url('/Zeethon-post.png')]">
-      <h2 className="p-4 text-2xl rounded-md font-bold border border-gray-500 w-full md:w-2/3">{post.title}</h2>
-      <div className="p-4 mt-4 rounded-md border border-gray-500 w-full md:w-2/3">
+    <div className="p-4 mt-4 gap-4 h-screen rounded-md justify-items-center bg-center bg-[url('/Zeethon-post.png')]">
+      <h2 className="p-4 text-2xl rounded-md font-bold bg-green-300 border border-gray-500 w-full md:w-2/3">{post.title}</h2>
+      <div className="p-4 mt-4 rounded-md bg-green-300 border border-gray-500 w-full md:w-2/3">
         <textarea 
           className="w-full font-semibold"
           value={post.content}
@@ -46,10 +46,10 @@ function PostDetails() {
         />
       </div> 
       <div className="flex gap-4 mt-4">
-        <Link to={`/edit/${id}`} className="text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 rounded w-30 border border-gray-500">
+        <Link to={`/edit/${id}`} className="bg-green-300 text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 rounded w-30 border border-gray-500">
           Edit
         </Link>
-        <button onClick={handleDelete} className="text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 border border-gray-500">
+        <button onClick={handleDelete} className="bg-green-300 text-center text-blue-500 hover:text-green-500 p-2 rounded w-30 border border-gray-500">
           Delete
         </button>
       </div>
