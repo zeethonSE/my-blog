@@ -14,7 +14,7 @@ function Blog() {
   }, []);
 
   return (
-    <div className="p-4 h-screen w-full">
+    <div className="p-4 h-screen w-full bg-cover bg-center bg-[url('/renantaglia.jpg')]">
       <h1 className="text-xl md:text-2xl font-bold mb-4">Blog Posts</h1>
       {posts.map(post => (
         <Link key={post.id} to={`/post/${post.id}`} className="block p-4 h-20 rounded-md bg-linear-to-b from-black to-blue-500">

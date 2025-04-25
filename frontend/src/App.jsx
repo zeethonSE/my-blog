@@ -8,7 +8,7 @@ import EditPost from "./pages/EditPost";
 function App() {
   return (
     <Router>
-      <nav className="flex gap-4 p-4">
+      <nav className="flex gap-4">
         <Link to="/" className="text-blue-500">Home</Link>
         <Link to="/blog" className="text-blue-500">Blog</Link>
         <Link to="/new-post" className="text-green-500">New Post</Link>
