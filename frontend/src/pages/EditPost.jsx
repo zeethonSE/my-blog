@@ -36,13 +36,13 @@ function EditPost(){
 
     return(
         <div className="p-4 mt-4 h-screen justify-items-center bg-gray-300 rounded-md">
-            <h2 className="text-xl font-semibold font-bold text-gray-500 md:text-2xl">EDIT POST</h2>
+            <h2 className="text-xl font-bold text-gray-500 md:text-2xl">EDIT POST</h2>
             <form onSubmit={handUpdate} className="flex flex-col gap-3 w-full md:w-2/3">
             <input
             type="text"
             value={title}
             onChange={e => setTitle(e.target.value)}
-            className="border p-2 rounded font-bold font-semibold" />
+            className="border p-2 rounded font-bold" />
             <textarea
             type="text"
             value={content}
