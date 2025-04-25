@@ -47,7 +47,7 @@ function EditPost(){
             type="text"
             value={content}
             onChange={e => setContent(e.target.value)}
-            rows={8}
+            rows={15}
             className="border p-2 rounded font-semibold" />
             <button type="submit" className="text-center font-semibold border border-gray-500 text-blue-500 hover:text-green-500 p-2 rounded">
                 Update
