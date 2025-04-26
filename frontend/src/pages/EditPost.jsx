@@ -35,7 +35,7 @@ function EditPost(){
     if (error) return <h2 className="text-red-500">{error}</h2>;
 
     return(
-        <div className="p-4 h-screen content-center justify-items-center rounded-md bg-cover bg-center bg-[url('/paolo-sanchez.jpg')]">
+        <div className="p-4 gap-3 h-screen content-center justify-items-center rounded-md bg-cover bg-center bg-[url('/paolo-sanchez.avif')]">
             <div className="w-full md:w-2/3">
                 <h2 className="text-sm text-left text-shadow-sm text-shadow-black font-bold text-gray-300 md:text-2xl">EDIT POST</h2>
             </div>

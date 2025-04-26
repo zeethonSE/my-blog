@@ -32,7 +32,7 @@ function PostDetails() {
   if (!post) return <h2>Loading...</h2>;
 
   return (
-    <div className="p-4 gap-4 h-screen rounded-md content-center justify-items-center bg-cover bg-center bg-[url('/ekrulila.jpg')]">
+    <div className="p-4 gap-4 h-screen rounded-md content-center justify-items-center bg-cover bg-center bg-[url('/ekrulila.avif')]">
       <h2 className="p-4 text-lg rounded-md font-bold bg-green-500 border border-gray-500 w-full md:text-xl md:w-2/3">{post.title}</h2>
       <div className="p-4 mt-4 rounded-md bg-green-300 border border-gray-500 w-full md:w-2/3">
         <textarea 
