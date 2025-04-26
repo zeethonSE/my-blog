@@ -37,7 +37,7 @@ function EditPost(){
     return(
         <div className="p-4 h-screen content-center justify-items-center rounded-md bg-cover bg-center bg-[url('/paolo-sanchez.jpg')]">
             <div className="w-full md:w-2/3">
-                <h2 className="text-sm text-left font-bold text-gray-300 md:text-2xl">EDIT POST</h2>
+                <h2 className="text-sm text-left text-shadow-sm font-bold text-gray-300 md:text-2xl">EDIT POST</h2>
             </div>
             <form onSubmit={handUpdate} className="flex flex-col gap-3 w-full md:w-2/3">
             <input
