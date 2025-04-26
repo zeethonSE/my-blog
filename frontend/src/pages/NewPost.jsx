@@ -31,25 +31,27 @@ function NewPost(){
         <div className="h-screen rounded-md bg-cover bg-center bg-[url('/clement-proust.avif')]">
            
             <div className="p-4 h-screen content-center justify-items-center">
-                {error && <p className="text-red-500 bg-black">{error}</p>}
+                <div className="justify-center ">
+                    {error && <p className="p-4 text-red-700 bg-black rounded-md mb-4">{error}</p>}
+                </div>
                 <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-full md:w-2/3">
                 <h3 className="text-sm text-shadow-sm text-shadow-black fond-bold font-semibold text-gray-300 md:text-2xl">CREATE NEW POST</h3>
                 <input 
-                className="text-lg md:text-xl p-2 rounded bg-green-500 font-semibold" 
+                className="text-lg md:text-xl p-2 rounded bg-green-950 font-semibold" 
                 type="text"
                 placeholder="Title"
                 value={title}
                 onChange={e => setTitle(e.target.value)} />
 
                 <textarea 
-                className="p-2 rounded bg-green-300 font-semibold w-full resize-none h-64 md:h-80" 
+                className="p-2 rounded bg-green-800 font-semibold w-full resize-none h-64 md:h-80" 
                 type="text" 
                 value={content} 
                 placeholder="New Post" 
                 onChange={e => setContent(e.target.value)} />
 
                 <button 
-                className="bg-green-500 hover:text-green-300 p-2 rounded" 
+                className="bg-green-950 hover:text-green-300 p-2 rounded" 
                 type="submit">Post</button>
                 </form>
             </div>

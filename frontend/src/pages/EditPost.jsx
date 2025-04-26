@@ -44,13 +44,13 @@ function EditPost(){
             type="text"
             value={title}
             onChange={e => setTitle(e.target.value)}
-            className="text-lg md:text-xl border p-2 rounded font-bold bg-green-500" />
+            className="text-lg md:text-xl border p-2 rounded font-bold bg-green-950" />
             <textarea
             type="text"
             value={content}
             onChange={e => setContent(e.target.value)}
-            className="border p-2 rounded font-semibold bg-green-300 w-full resize-none h-64 md:h-80" />
-            <button type="submit" className="bg-green-500 text-center font-semibold border border-gray-500 hover:text-green-300 p-2 rounded">
+            className="border p-2 rounded font-semibold bg-green-800 w-full resize-none h-64 md:h-80" />
+            <button type="submit" className="bg-green-950 text-center font-semibold border border-gray-500 hover:text-green-300 p-2 rounded">
                 Update
             </button>
             </form>
