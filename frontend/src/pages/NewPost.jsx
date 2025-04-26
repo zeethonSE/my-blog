@@ -28,7 +28,7 @@ function NewPost(){
     }
 
     return (
-        <div className="h-screen rounded-md bg-cover bg-center bg-[url('/clement-proust')]">
+        <div className="h-screen rounded-md bg-cover bg-center bg-[url('/clement-proust.avf')]">
            
             <div className="p-4 h-screen content-center justify-items-center">
                 {error && <p className="text-red-500">{error}</p>}
