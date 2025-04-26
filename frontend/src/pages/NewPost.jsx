@@ -31,7 +31,7 @@ function NewPost(){
         <div className="h-screen rounded-md bg-cover bg-center bg-[url('/clement-proust.avif')]">
            
             <div className="p-4 h-screen content-center justify-items-center">
-                {error && <p className="text-red-500">{error}</p>}
+                {error && <p className="text-red-500 bg-black">{error}</p>}
                 <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-full md:w-2/3">
                 <h3 className="text-sm text-shadow-sm text-shadow-black fond-bold font-semibold text-gray-300 md:text-2xl">CREATE NEW POST</h3>
                 <input 
