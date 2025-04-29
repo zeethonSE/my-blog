@@ -1,3 +1,5 @@
+![My Blog Banner](./assets/my-blog-banner.webp)
+
 ## My Blog - Fullstack Project
 
 This is a fullstack Blog Application built with React.js (Vite) for the frontend and Node.js (Express.js) for the backend.
