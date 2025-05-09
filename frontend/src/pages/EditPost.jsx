@@ -23,7 +23,7 @@ function EditPost(){
         .catch(() => setError("Post not found."));
     }, [id]);
 
-    const handUpdate = async (e) => {
+    const handleUpdate = async (e) => {
         e.preventDefault();
         
         await axios
@@ -39,7 +39,7 @@ function EditPost(){
             <div className="w-full md:w-2/3">
                 <h2 className="text-sm text-left text-shadow-sm text-shadow-black font-bold text-gray-300 md:text-2xl">EDIT POST</h2>
             </div>
-            <form onSubmit={handUpdate} className="flex flex-col gap-3 w-full md:w-2/3">
+            <form onSubmit={handleUpdate} className="flex flex-col gap-3 w-full md:w-2/3">
             <input
             type="text"
             value={title}
